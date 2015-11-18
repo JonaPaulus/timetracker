@@ -1,0 +1,49 @@
+/* baselayout */
+* {font-family:calibri,arial;color:#555;}
+body {padding:0;margin:0;}
+header {width:100%;height:80px;background-color:#3887BE;color:white;}
+footer {min-height:100px;background-color:#333;color:white;bottom:0;position:absolute;width:100%;}
+footer p {color:white;}
+p {margin-top:0;}
+img {padding:2px;background-color:#eee;border:1px solid #333333}
+button {cursor:pointer;}
+#pagetitle, #pagetitle > a  {margin:0;line-height:80px;font-size:30px;color:white;text-decoration:none;font-weight:normal}
+#body {width:100%;padding:20px 0;background-color:#fafafa;}
+#main-area {padding-right:10px;}
+.wrapper {width:calc(100% - 40px);margin:auto;max-width:1170px;}
+.sheet {background-color:white;padding:20px;}
+.center {text-align:center;}
+.clear {clear:both;float:none;}
+
+/* custom layout */
+#timer {
+	text-align:center;
+	font-size:3em;
+}
+#button-wrapper,
+#toC42,
+#msg-box {
+	text-align:center;
+}
+#button-wrapper > button,
+#toC42 > button {
+	width:110px;
+	height:40px;
+	font-size:15px;
+	border-radius:20px;
+	margin-bottom:5px;
+}
+#toC42 > button {
+	width:223px;
+}
+#toC42 > #action {
+	margin:20px 0 10px;
+	width:213px;
+	border-radius:20px;
+	height:40px;
+	font-size:20px;
+	padding: 0 5px;
+}
+#button-wrapper > button.active {
+	
+}
