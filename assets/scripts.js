@@ -27,12 +27,17 @@ $(document).on('click', '.running', function() {
 
 //reset timer
 $(document).on('click', '#btnReset', function() {
-	$('#btnStart').html('Run');
-	if ($('#btnStart').hasClass('running')) {
-		$('#btnStart').addClass('pause').removeClass('running');
+	
+	var r = confirm("Are you sure?");
+	
+	if (r) {
+		$('#btnStart').html('Run');
+		if ($('#btnStart').hasClass('running')) {
+			$('#btnStart').addClass('pause').removeClass('running');
+		}
+		resetTimer();
+		pause = true;
 	}
-	resetTimer();
-	pause = true;
 });
 
 // Send the timer via ajax to the backend
